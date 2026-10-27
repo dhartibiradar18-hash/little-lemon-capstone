@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Lemon</title>
+  <link rel="stylesheet" href="{% static 'restaurant/style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Little Lemon</h1>
+    <p class="tagline">Family-owned Mediterranean restaurant</p>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>Fresh, seasonal dishes inspired by the Mediterranean, served in a warm and friendly setting.</p>
+    </section>
+    <section>
+      <h2>API</h2>
+      <p>This site is backed by a REST API for the menu and table bookings.</p>
+      <ul>
+        <li><code>/api/menu/</code> &ndash; view and manage the menu</li>
+        <li><code>/api/bookings/</code> &ndash; reserve a table (login required)</li>
+        <li><code>/api/registration/</code> &ndash; create an account</li>
+        <li><code>/api/token/login/</code> &ndash; get an auth token</li>
+      </ul>
+    </section>
+  </main>
+  <footer>&copy; Little Lemon</footer>
+</body>
+</html>
